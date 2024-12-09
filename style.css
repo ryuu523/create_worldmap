@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+
+.flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 70dvh;
+
+}
+
+.palet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25dvh;
+    width: 100dvw;
+    & .circle {
+        cursor: pointer;
+        margin: 0 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 5px solid black;
+        background-size: cover;
+        /* 背景画像を要素のサイズに拡大縮小 */
+        background-repeat: no-repeat;
+        /* 繰り返さない */
+        background-position: center;
+        /* 要素の中央に画像を配置 */
+    }
+}
+
+#map {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    & .row {
+        display: flex;
+        width: calc(480px * 2);
+        height: calc((270px * 2) / 27);
+        & .cell {
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            width: calc((480px * 2) / 48);
+            height: 100%;
+            background-size: cover;
+            /* 背景画像を要素のサイズに拡大縮小 */
+            background-repeat: no-repeat;
+            /* 繰り返さない */
+            background-position: center;
+            /* 要素の中央に画像を配置 */
+        }
+    }
+}
+
+
+
