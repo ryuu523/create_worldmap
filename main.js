@@ -8,7 +8,7 @@ const lava = "./mapTile/maptile_yogan.png";
 
 const map = document.getElementById("map")
 const palet = document.querySelector(".palet")
-let field = Array.from({ length: 28 }, () => Array.from({ length: 48 }, () => 0))
+let field = Array.from({ length: 27 }, () => Array.from({ length: 49 }, () => 0))
 
 
 const types = [grass1, grass2, see1, see2, snow, sand, lava]
